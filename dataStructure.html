@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // ARRAYS
+
+        var cart = [0,1,2,3,4,5]
+        console.log(cart);
+
+        var goodStudents = ['Joshua', 'Badirat', 'Excel']
+        console.log(goodStudents);
+
+
+        var mixed = [33, true, false, [0,1,2,3], {}, 'Joshua']
+        console.log(mixed);
+
+        var names = ['Joshua', 'shola', 'Ayomide', 'Judah']
+        console.log(names[1]);
+ 
+        var food = []
+        console.log(food);
+        food[0] = 'Yam'
+        food[1] = 'Beans'
+        food[2] = 'Rice'
+        food[3] = 'Pepper'
+
+        // console.log(food.length);
+
+        food.push('Rice')
+        food.push('Pepper')
+        food.unshift('Beans')
+        food.unshift('Tomatoe')
+        food.unshift('Garri')
+        food.push('Beans')
+        food.unshift('Bread')
+        food.push('Yam')
+        console.log(food)
+
+
+        // Assignment - Types of Arrays
+
+        // slice - you can remove one or more index wherever you want in the array
+        // splice
+        //drunks.splice(startingIndex, numberOfItemsToRemove, replacement)
+        //drinks.splice(1,2,'fanta')
+        //console.log(drinks)
+
+        var drinks = ['Pepsi','coke','fanta','seven up','sprite']
+        drinks.splice(1,2,'malta gunness', 'monster')
+        var newDrinks = drinks.splice(1,2)
+        console.log(newDrinks);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<!-- <h2>What Can JavaScript Do?</h2>
+<p>JavaScript can change HTML attribute values.</p>
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='Picture1.png'">Turn on the light</button>
+<img id="myImage" src="Picture2.png" style="width:100px">
+<button onclick="document.getElementById('myImage').src='Picture2.png'">Turn off the light</button> -->
+
+<!-- ogbomoso digital economy summit -->
+<script>
+    var regex1 = /^[0-9]{11}$/
+    var phoneNum = 70440327130
+
+    console.log(regex1.test(phoneNum))
+
+    if(regex1.test(phoneNum) == true) {
+        console.log('valid phone number');
+    } 
+    else {
+        console.log('invalid phone number');
+    }
+
+    var upperCaseRegex = /^([A-Z]{1})([a-z]{1,})$/
+    var firstName = 'Ogunbunmi'
+    console.log(upperCaseRegex.test(firstName));
+
+
+    // [And = && (All condition must be true)]   [ or = || (atleast one condition must be true)]
+    // if and else statement - to create conditions
+    var food1 = 'rice'
+    var food2 = 'beans'
+
+    if(food1 == "rice" || food2 == "beans") {
+        console.log('He will have it')
+    } 
+    else {
+        console.log("he won't eat it")
+    }
+
+    // loop
+
+    for (i=1; i<=1000; i++) {
+        console.log(`I am a developer ${i}`)
+    };
+
+
+    // for(startingValue; condition; steps){
+    //     //block of code
+    // };
+    
+    for (i=10; i <= 20; i++) {
+       console.log(`ADEKUNLE ${i}`)
+    };
+    // to increase i in 3's; i=+3;   (i.e, i = i+3)
+
+    for(i=1; i <= 100; i+=3) {
+        console.log(`Joshua ${i}`)
+    }
+
+    // nexted loop
+    for(g=1; g <= 5; g++){
+        for(q=1; q <= 10; q++){
+            console.log(`cartoom ${g} biscuit ${q}`);
+        }
+    };
+
+</script>
+
+</body>
+</html>

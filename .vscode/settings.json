@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "fira-code-material-icon-theme",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontFamily": "'Fira Code', monospace",
+    "editor.fontLigatures": true,
+    "git.ignoreLimitWarning": true,
+    "liveServer.settings.port": 5502
+}

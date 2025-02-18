@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <button onclick="sayName('Joshua', 25, 'true')">Joshua</button>
+    <button onclick="sayName('Adekunle', 30, 'true', 240011)">Adekunle</button>
+    <button onclick="sayName('Kayode')">Kayode</button> -->
+
+    <button onclick="selectItem('Salt')">Select</button>
+    <button onclick="addToCart('Salt')">Add to Cart</button>
+    <button onclick="proceedToPay('$15')">Proceed to pay</button>
+
+    <script>
+        // function sayName(Student="name",age=0,status=false,idNumber="00000"){
+        //     console.log(`My name is ${Student}, i am ${age} years old, i am young and ${status}, my id number is ${idNumber}`)
+        // }
+
+        function selectItem(item='foodStuff'){
+            console.log(`${item} selected, proceed to add ${item} to Cart`)
+        }
+
+        function addToCart(Add){
+            console.log(`${Add} have been added to cart successfully`)
+        }
+
+        function proceedToPay(payment){
+            console.log(`Proceed to make payment of ${payment}`)
+        }
+    </script>
+</body>
+</html>

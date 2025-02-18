@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // stop using var, use let. Stop using function, use const = () => {}
+        //Sqi.party.netify.app - anonymous message 
+
+        // let shoe = "Balenciaga"
+        // shoe = "Sneaker"
+        // console.log(shoe);
+
+        // const pi = 22/7
+        // console.log(pi);
+
+        // function chop() {}
+        // const fly = () => {}
+        // const jump = () => {
+        //     alert("yes")
+        // }
+
+//-----------------------------------------------------------------------------------------------------
+
+        // Objects
+        // let allBooks = ['The legend of the Seeker'] = an Array
+        // let student = {key:value} == an Object
+        let student = {
+            name : 'Joshua',
+            gender : "Male",
+            studentID : 240361,
+            age : 30,
+            accBal : 99000000000,
+            makeNoise(){
+                console.log(`${student.name} will make noise`);
+            }
+        }
+
+        //console.log(student)
+        console.log(`${student.name} is ${student.age} years old`)
+        console.log(student['accBal']);
+        student.makeNoise()
+        console.info(student);
+        console.log(window);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;color: darkblue; font-size: 3rem; text-decoration: underline;font-family:'Times New Roman', Times, serif; font-weight:900;">LOCAL STORAGE</h1>
+    <script>
+// local storage - browser storage of info (string) 
+        localStorage.setItem("Student name", "Joshua")
+
+        let studentInfo = {
+            Name : "Joshua",
+            Dept : "Software Eng",
+            level : "One"
+        }
+        localStorage.setItem("student information", JSON.stringify(studentInfo))
+
+        let studentBackground = ["Oyo State", "Ogbomoso", "Ogbomoso South LGA"]
+        localStorage.setItem("StudentBG", JSON.stringify(studentBackground))
+
+// Fetching from local storage
+       let studentName = localStorage.getItem("Student name")
+       console.log(studentName)
+
+       let studentDetails = JSON.parse(localStorage.getItem("student information"))
+       console.log(studentDetails)
+
+       let studentBackG = JSON.parse(localStorage.getItem("StudentBG"))
+       console.log(studentBackG)
+    </script>
+</body>
+</html>

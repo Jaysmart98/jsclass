@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="show"></div> -->
+    <div id="display"></div>
+
+    <button onclick="alumni()"> Check </button>
+
+     <script>
+        // let test = new Array(10).fill('Adekunle')
+        // show.innerHTML += `<p">${test}</p>`
+
+
+        class Student {
+            constructor (myName, gender, id, department, indigene, level, gra) {
+                this.name = myName,
+                this.gender = gender,
+                this.id = id,
+                this.department = department,
+                this.indigene = indigene,
+                this.level = level,
+                this.graduated = gra
+            }
+
+            alumni(){
+            if(this.graduated){
+                console.log(`${this.name} is an alumni`);
+            }
+            else {
+                console.log(`${this.name} is not an alumni`)
+            }
+        }
+
+    }
+
+        let good = new Student ('Joshua', "male", 200105, "software development", true, "Level Two")
+            console.log(good)
+        let nextStudent = new Student ('Adekunle', "male", 200101, "Web development", true, "Level Two")
+            console.log(good, nextStudent)
+            
+     </script>
+</body>
+</html>

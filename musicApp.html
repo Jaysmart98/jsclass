@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music App</title>
+  <link rel="stylesheet" href="musicApp.css" class="css">
+</head>
+<body>
+
+<div id="mainContainer">
+  <img src="Images/ListeningToMusic.png" alt="">
+    <div id="show"></div>
+    <button onclick="playButton()">Fetch Songs</button>
+</div>
+
+
+
+<script>
+
+  const url = 'https://musicapi-19wk.onrender.com/music/myAPI'
+
+
+  const playButton = async() => {
+        let songs = await fetch(url);
+        let music = await songs.json()
+        console.log(music);
+
+            music.map((info) =>{
+                show.innerHTML += `
+                <p>Name: ${info.artistName}</p>
+                <p>Album: ${info.songUrl}</p>
+                <p>Title: ${info.songTitle}</p>
+                 <br>
+                <img src="${info.songImage}">
+                <audio controls type="audio">source : ${info.songUrl}</audio>
+                `
+            } ) 
+        }
+
+</script>
+
+</body>
+</html>
